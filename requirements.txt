@@ -6,3 +6,4 @@ pytesseract
 yt-dlp
 python-pptx
 opencv-python
+opencv-python-headless
