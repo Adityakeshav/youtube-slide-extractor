@@ -5,3 +5,4 @@ imagehash
 pytesseract
 yt-dlp
 python-pptx
+opencv-python
