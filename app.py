@@ -9,10 +9,16 @@ import yt_dlp as youtube_dl
 from pptx import Presentation
 from pptx.util import Inches
 import pytesseract
+import shutil
 
-# Ensure this path is correct for Streamlit Cloud
-pytesseract.pytesseract.tesseract_cmd = '/usr/bin/tesseract'
+# Dynamically find the path of tesseract
+tesseract_path = shutil.which("tesseract")
 
+# Check if tesseract is found and set the path
+if tesseract_path:
+    pytesseract.pytesseract.tesseract_cmd = tesseract_path
+else:
+    raise EnvironmentError("Tesseract OCR is not installed or not found in the system path.")
 
 # Function to download the video from YouTube
 def download_video(url, output_path='video.mp4'):

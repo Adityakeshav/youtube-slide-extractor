@@ -6,9 +6,11 @@ pytesseract
 yt-dlp
 python-pptx
 pytesseract
-opencv-python
+opencv-python-headlines
 Pillow
 imagehash
 yt-dlp
 python-pptx
 streamlit
+opencv-python
+yt-dlp
