@@ -8,17 +8,9 @@ import tempfile
 import yt_dlp as youtube_dl
 from pptx import Presentation
 from pptx.util import Inches
-import pytesseract
-import shutil
 
-# Dynamically find the path of tesseract
-tesseract_path = shutil.which("tesseract")
-
-# Check if tesseract is found and set the path
-if tesseract_path:
-    pytesseract.pytesseract.tesseract_cmd = tesseract_path
-else:
-    raise EnvironmentError("Tesseract OCR is not installed or not found in the system path.")
+# Configure Tesseract path if on Windows
+pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
 # Function to download the video from YouTube
 def download_video(url, output_path='video.mp4'):
