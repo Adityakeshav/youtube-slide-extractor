@@ -5,5 +5,10 @@ imagehash
 pytesseract
 yt-dlp
 python-pptx
+pytesseract
 opencv-python
-opencv-python-headless
+Pillow
+imagehash
+yt-dlp
+python-pptx
+streamlit
