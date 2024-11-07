@@ -1,0 +1,7 @@
+streamlit
+opencv-python
+Pillow
+imagehash
+pytesseract
+yt-dlp
+python-pptx
