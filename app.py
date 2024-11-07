@@ -8,9 +8,11 @@ import tempfile
 import yt_dlp as youtube_dl
 from pptx import Presentation
 from pptx.util import Inches
+import pytesseract
 
-# Configure Tesseract path if on Windows
-pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+# Ensure this path is correct for Streamlit Cloud
+pytesseract.pytesseract.tesseract_cmd = '/usr/bin/tesseract'
+
 
 # Function to download the video from YouTube
 def download_video(url, output_path='video.mp4'):
