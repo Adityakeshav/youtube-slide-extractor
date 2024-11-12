@@ -14,3 +14,4 @@ python-pptx
 streamlit
 opencv-python
 yt-dlp
+cv2
